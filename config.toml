@@ -1,0 +1,23 @@
+baseURL = "https://leandro.ross.nom.br"
+languageCode = "en-us"
+title = "Leandro.Ross - Personal Sitio"
+author = "Leandro Ross"
+theme = "leandro"
+canonifyurls = true
+copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
+
+[Params]
+  disqus = "leandroross"
+  AuthorName = "Fredrik"
+  github = "Senjindarashiva"
+  bitbucket = "floch"
+  flickr = "senjin"
+  twitter = "senjindarshiva"
+  email = "mail@fredrikloch.me"
+  description = ""
+  cv = "/pages/cv"
+  legalnotice = "/pages/legal-notice"
+  linkedin = "fredrikloch"
+  cover = "/images/background-cover.jpg"
+  logo = "/img/logo-1.jpg"
+  

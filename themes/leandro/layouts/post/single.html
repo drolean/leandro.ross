@@ -1,0 +1,47 @@
+{{ partial "header.html" . }}
+
+<section class="container grid-1280">
+    <div class="columns">
+
+        {{ partial "sidebar.html" . }}
+
+        <div class="column">
+            <section class="container">
+                <header class="text-center">
+                    <h1>{{ .Title }}</h1>
+                </header>
+            </section>
+
+            <section class="container">
+                <div class="notes text-large">
+                    {{ .Content }}
+                </div>
+            </section>
+
+            {{ partial "comments.html" .}}
+
+            <ul class="pagination">
+                {{ if .PrevInSection }}
+                <li class="page-item page-prev">
+                    <a href="{{ .PrevInSection.Permalink }}">
+                        <p class="page-item-subtitle">Previous</p>
+                        <h3 class="page-item-title">{{ .PrevInSection.Title }}</h3>
+                    </a>
+                </li>
+                {{ end }}
+                {{ if .NextInSection }}
+                <li class="page-item page-next">
+                    <a href="{{ .NextInSection.Permalink }}">
+                        <p class="page-item-subtitle">Next</p>
+                        <h3 class="page-item-title">{{ .NextInSection.Title }}</h3>
+                    </a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+
+
+</section>
+
+{{ partial "footer.html" . }}

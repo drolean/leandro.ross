@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="https://github.com/drolean" />
+    <title> {{ .Title }} &middot; {{ .Site.Title }} </title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.2.14/spectre.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.2.14/spectre-icons.css" />
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css">
+    <!-- RSS -->
+    <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+</head>
+<body>
+
+<section class="section section-header bg-gray">
+    <section class="grid-header container grid-1280">
+        <nav class="navbar">
+            <section class="navbar-section">
+                <a href="#sidebar" class="btn btn-lg btn-link btn-action show-sm"><i class="icon icon-menu"></i></a>
+                <a href="{{ .Site.BaseURL }}/" class="navbar-brand mr-10" title="link to homepage for {{ .Site.Title }}">Leandro.Ross</a>
+                <a href="#" class="btn btn-link">Menu</a>
+            </section>
+            <section class="navbar-section">
+                <a href="https://github.com/drolean" class="btn btn-primary">GitHub</a>
+            </section>
+        </nav>
+    </section>
+</section>

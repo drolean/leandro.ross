@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Leandro.Ross - Personal Sitio </title>
+    <link>https://leandro.ross.nom.br/post/</link>
+    <updated>Thu, 04 May 2017 10:24:15 BRT</updated>
+    <language>en-us</language>
+    
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    
+    <item>
+      <title>bem bosta</title>
+      <link>https://leandro.ross.nom.br/post/bem-bosta/</link>
+      <pubDate>Thu, 04 May 2017 10:24:15 BRT</pubDate>
+      
+      <guid>https://leandro.ross.nom.br/post/bem-bosta/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>welcome</title>
+      <link>https://leandro.ross.nom.br/post/welcome/</link>
+      <pubDate>Thu, 04 May 2017 09:43:21 BRT</pubDate>
+      
+      <guid>https://leandro.ross.nom.br/post/welcome/</guid>
+      <description>&lt;p&gt;In the serverless architecture, functions are the unit of scale.  This provides useful isolation of your logic, leaving you in a very agile position when you are in production and you want to modify your application components individually, without affecting the entire system. The downside is when functions are also treated as the unit of development.  Every function requires its own scaffolding and code dependencies, which is a pain to manage.  Who wants to do &lt;code&gt;npm install yada-yada --save&lt;/code&gt; or &lt;code&gt;npm update&lt;/code&gt; 40 different times?  The focus on individual Lambdas has been the recommended practice.  We implemented it in V.0 of the Framework, but it hasn’t made our users as happy as they could be, and will be, in Version 1&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

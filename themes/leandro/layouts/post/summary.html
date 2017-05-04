@@ -1,0 +1,18 @@
+<article>
+    <header>
+        <h2>
+            <a href="{{ .Permalink }}" class="anchor" aria-hidden="true">#</a> {{ .Title }} {{ if .Draft }}:: DRAFT{{end}}
+            <div class="float-right time"><time class="label" style="font-size: 20px;">{{ .Date.Format "Mon, Jan 2, 2006" }} - Read in {{ .ReadingTime }} Min </time></div>
+        </h2>
+    </header>
+
+    <section class="notes text-large">
+        {{ .Summary }}
+    </section>
+
+    <footer>
+        <a href='{{ .Permalink }}'><nobr>Read more →</nobr></a>
+    </footer>
+</article>
+
+<div class="divider text-center" data-content="OUTRA"></div>
