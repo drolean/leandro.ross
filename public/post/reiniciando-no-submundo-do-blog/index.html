@@ -54,6 +54,7 @@
             <section class="container">
                 <header class="text-center">
                     <h1>Reiniciando no submundo do Blog</h1>
+                    <div class="float-left time"><time class="label">Thu, May 4, 2017 - Tempo de leitura 6 Min </time></div>
                 </header>
             </section>
 
@@ -101,7 +102,41 @@
 </ul>
 
 <p><strong><em>Novas Definições</em></strong></p>
+
+<p>&ndash; O que e ditado, o que novo, quais os novos caminhos, novas regras, o que tem de novo em desenvolvimento&hellip; Como um bom desenvolvedor eu me atualizo constantemente, sobre tendencias, tecnologias e afins relacionados a web e desenvolvimento, porem em meio a atualidade de hoje, vivemos uma constante mutação de tecnologias e parâmetros, como se ditássemos o que e bom e oque e ruim. Acho que isso e bom, a troca de informação, experiencia e etc, para poder chegar em algo útil a todos. Por isso fiz uma busca para saber o que poderia colocar de novo em meu novo projeto, alguma tendencia nova na qual não tinha visto ainda ou algo inusitado, foi difícil achar e creio que não achei nenhum novidade, levando em consideração o meu conhecimento na área.</p>
+
+<ul>
+<li>Definições HTML5 fui rever se tinha mais alguma mudança ou boa pratica, para isso consultei este artigo <a href="https://www.sitepoint.com/defining-the-sample-sites-page-structure/">https://www.sitepoint.com/defining-the-sample-sites-page-structure/</a></li>
+<li>Por mais que seja um blog, preciso colocar boas praticas no código e definições <strong><em>TAG&rsquo;s</em></strong> para reconhecimento de sistemas terceiros, para isso eu achei este artigo bem interessante <a href="https://mention.com/blog/digital-marketing-checklists/">https://mention.com/blog/digital-marketing-checklists/</a></li>
+<li>Checklist como qualquer produto precisamos criar um checklist de coisas para publicar nosso projeto aqui esta um link contendo alguns items a se checar <a href="https://moz.com/blog/launching-new-website-seo-checklist-whiteboard-friday">https://moz.com/blog/launching-new-website-seo-checklist-whiteboard-friday</a> - <a href="http://www.developerdrive.com/2017/02/the-ultimate-website-launch-checklist/">http://www.developerdrive.com/2017/02/the-ultimate-website-launch-checklist/</a></li>
+</ul>
 </blockquote>
+
+<p><strong>2° Dia</strong></p>
+
+<p>Bom já com muitos dados coletados, chegou a hora de colocar a mão na massa, a primeira coisa que eu fiz foi seguir o tutorial do <strong><em>PHPIXIE</em></strong> <a href="https://phpixie.com/quickstart.html">https://phpixie.com/quickstart.html</a> e la fui eu feliz da vida por entrar em contato com um novo framework, fiz a instalação dele via composer, setei o host no nginx e abri a url que designei para ele, voilá apareceu a primeira pagina um sinal que esta tudo certo, antes de mais nada fui setar o banco de dados, <code>resumindo como eu queria algo simples pensei em utilizar sqlite para database</code> veio a primeira decepção tentei de todas as formas me conectar a uma base sqlite previamente criada sem nada e não consegui, insisti por alguns minutos, fucei a documentação entrei no gitter e não consegui, tive que setar o mysql OK funcionando perfeito agora com banco de dados, rodei a primeira migration e achei que estaria na hora de definir o layout.</p>
+
+<p>Pensei em algo simples e funcional e <strong><em>MOBILE FIRST</em></strong> com o framework já em mãos segui o mesmo modelo da documentação que achei bonita e fui construindo, ate chegar esse modelo que você esta vendo.</p>
+
+<p>Como o layout pronto e já separado continuei o tutorial do <strong><em>PHPIXIE</em></strong> até a etapa de relacionamentos, onde tive muita dor de cabeça <code>3. ORM relationships and pagination</code> exatamente nesta parte. A Partir dai perdi algumas horas (duas ou três) ate me decepcionar completamente.</p>
+
+<p><img src="http://image.prntscr.com/image/4fa04774f3d24965b6a26a14a4203eb2.png" alt="Gitter Chat" /></p>
+
+<p>Não vou desistir, fui ao google novamente procurar por <code>Blog Source site:github.com</code> e la me apareceram muitas coisas em Python, GO, PHP, Wordpress e etc&hellip; Baixei alguns e tentei compilar fazer funcionar mas todos sem retorno.</p>
+
+<p><strong><em>Agulha no palheiro</em></strong>
+Nessa busca me deparei com o seguinte resultado que me remetia a um repositório no github <a href="https://github.com/jessfraz/blog">https://github.com/jessfraz/blog</a> olhei o código e não achei muito código, fiz o clone do repo e vi que tinha um arquivo <code>release.sh</code> rodei ele e logo o console me retornou erro:</p>
+
+<pre>Building site with hugo
+./release.sh: line 28: hugo: command not found</pre>
+
+<p>OPA o que é HUGO, quem seria HUGO, vou atras do HUGO, e la vou eu de novo ao google buscar por <strong><em>&ldquo;Building site with hugo&rdquo;</em></strong> e o primeiro resultado <a href="https://gohugo.io/overview/quickstart/">https://gohugo.io/overview/quickstart/</a>  um video logo de cara &ldquo;<strong><em>A New Hugo Site in Under 2 Minutes</em></strong>&rdquo; CARALH0 achei minha pepita de ouro, segui o tutorial e criei meu primeiro site feito em <strong>HUGO</strong> logo apos já quis portar o layouts que estava no PHPIXIE para o novo HUGO, fui olhando o tema que tinha acabo de instalar e vi a facilidade do mesmo.</p>
+
+<blockquote>
+<p>***E CA ESTOU UM SITE FEITO EM HUGO COM SEUS POSTS ESCRITOS EM MARKDOWN COM CÓDIGO ABERTO, CASO NÃO ACREDITE VEJA O REPO ***<a href="https://github.com/drolean/leandro.ross">https://github.com/drolean/leandro.ross</a></p>
+</blockquote>
+
+<p>&ndash; como e bom ter um site que você pode chamar de seu, acabei de atualizar minhas redes com meu endereço de site pessoal \o/</p>
 
                 </div>
             </section>

@@ -56,7 +56,41 @@
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Novas Definições&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;ndash; O que e ditado, o que novo, quais os novos caminhos, novas regras, o que tem de novo em desenvolvimento&amp;hellip; Como um bom desenvolvedor eu me atualizo constantemente, sobre tendencias, tecnologias e afins relacionados a web e desenvolvimento, porem em meio a atualidade de hoje, vivemos uma constante mutação de tecnologias e parâmetros, como se ditássemos o que e bom e oque e ruim. Acho que isso e bom, a troca de informação, experiencia e etc, para poder chegar em algo útil a todos. Por isso fiz uma busca para saber o que poderia colocar de novo em meu novo projeto, alguma tendencia nova na qual não tinha visto ainda ou algo inusitado, foi difícil achar e creio que não achei nenhum novidade, levando em consideração o meu conhecimento na área.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Definições HTML5 fui rever se tinha mais alguma mudança ou boa pratica, para isso consultei este artigo &lt;a href=&#34;https://www.sitepoint.com/defining-the-sample-sites-page-structure/&#34;&gt;https://www.sitepoint.com/defining-the-sample-sites-page-structure/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Por mais que seja um blog, preciso colocar boas praticas no código e definições &lt;strong&gt;&lt;em&gt;TAG&amp;rsquo;s&lt;/em&gt;&lt;/strong&gt; para reconhecimento de sistemas terceiros, para isso eu achei este artigo bem interessante &lt;a href=&#34;https://mention.com/blog/digital-marketing-checklists/&#34;&gt;https://mention.com/blog/digital-marketing-checklists/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Checklist como qualquer produto precisamos criar um checklist de coisas para publicar nosso projeto aqui esta um link contendo alguns items a se checar &lt;a href=&#34;https://moz.com/blog/launching-new-website-seo-checklist-whiteboard-friday&#34;&gt;https://moz.com/blog/launching-new-website-seo-checklist-whiteboard-friday&lt;/a&gt; - &lt;a href=&#34;http://www.developerdrive.com/2017/02/the-ultimate-website-launch-checklist/&#34;&gt;http://www.developerdrive.com/2017/02/the-ultimate-website-launch-checklist/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;2° Dia&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Bom já com muitos dados coletados, chegou a hora de colocar a mão na massa, a primeira coisa que eu fiz foi seguir o tutorial do &lt;strong&gt;&lt;em&gt;PHPIXIE&lt;/em&gt;&lt;/strong&gt; &lt;a href=&#34;https://phpixie.com/quickstart.html&#34;&gt;https://phpixie.com/quickstart.html&lt;/a&gt; e la fui eu feliz da vida por entrar em contato com um novo framework, fiz a instalação dele via composer, setei o host no nginx e abri a url que designei para ele, voilá apareceu a primeira pagina um sinal que esta tudo certo, antes de mais nada fui setar o banco de dados, &lt;code&gt;resumindo como eu queria algo simples pensei em utilizar sqlite para database&lt;/code&gt; veio a primeira decepção tentei de todas as formas me conectar a uma base sqlite previamente criada sem nada e não consegui, insisti por alguns minutos, fucei a documentação entrei no gitter e não consegui, tive que setar o mysql OK funcionando perfeito agora com banco de dados, rodei a primeira migration e achei que estaria na hora de definir o layout.&lt;/p&gt;
+
+&lt;p&gt;Pensei em algo simples e funcional e &lt;strong&gt;&lt;em&gt;MOBILE FIRST&lt;/em&gt;&lt;/strong&gt; com o framework já em mãos segui o mesmo modelo da documentação que achei bonita e fui construindo, ate chegar esse modelo que você esta vendo.&lt;/p&gt;
+
+&lt;p&gt;Como o layout pronto e já separado continuei o tutorial do &lt;strong&gt;&lt;em&gt;PHPIXIE&lt;/em&gt;&lt;/strong&gt; até a etapa de relacionamentos, onde tive muita dor de cabeça &lt;code&gt;3. ORM relationships and pagination&lt;/code&gt; exatamente nesta parte. A Partir dai perdi algumas horas (duas ou três) ate me decepcionar completamente.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://image.prntscr.com/image/4fa04774f3d24965b6a26a14a4203eb2.png&#34; alt=&#34;Gitter Chat&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Não vou desistir, fui ao google novamente procurar por &lt;code&gt;Blog Source site:github.com&lt;/code&gt; e la me apareceram muitas coisas em Python, GO, PHP, Wordpress e etc&amp;hellip; Baixei alguns e tentei compilar fazer funcionar mas todos sem retorno.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Agulha no palheiro&lt;/em&gt;&lt;/strong&gt;
+Nessa busca me deparei com o seguinte resultado que me remetia a um repositório no github &lt;a href=&#34;https://github.com/jessfraz/blog&#34;&gt;https://github.com/jessfraz/blog&lt;/a&gt; olhei o código e não achei muito código, fiz o clone do repo e vi que tinha um arquivo &lt;code&gt;release.sh&lt;/code&gt; rodei ele e logo o console me retornou erro:&lt;/p&gt;
+
+&lt;pre&gt;Building site with hugo
+./release.sh: line 28: hugo: command not found&lt;/pre&gt;
+
+&lt;p&gt;OPA o que é HUGO, quem seria HUGO, vou atras do HUGO, e la vou eu de novo ao google buscar por &lt;strong&gt;&lt;em&gt;&amp;ldquo;Building site with hugo&amp;rdquo;&lt;/em&gt;&lt;/strong&gt; e o primeiro resultado &lt;a href=&#34;https://gohugo.io/overview/quickstart/&#34;&gt;https://gohugo.io/overview/quickstart/&lt;/a&gt;  um video logo de cara &amp;ldquo;&lt;strong&gt;&lt;em&gt;A New Hugo Site in Under 2 Minutes&lt;/em&gt;&lt;/strong&gt;&amp;rdquo; CARALH0 achei minha pepita de ouro, segui o tutorial e criei meu primeiro site feito em &lt;strong&gt;HUGO&lt;/strong&gt; logo apos já quis portar o layouts que estava no PHPIXIE para o novo HUGO, fui olhando o tema que tinha acabo de instalar e vi a facilidade do mesmo.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;***E CA ESTOU UM SITE FEITO EM HUGO COM SEUS POSTS ESCRITOS EM MARKDOWN COM CÓDIGO ABERTO, CASO NÃO ACREDITE VEJA O REPO ***&lt;a href=&#34;https://github.com/drolean/leandro.ross&#34;&gt;https://github.com/drolean/leandro.ross&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&amp;ndash; como e bom ter um site que você pode chamar de seu, acabei de atualizar minhas redes com meu endereço de site pessoal \o/&lt;/p&gt;
 </description>
     </item>
     

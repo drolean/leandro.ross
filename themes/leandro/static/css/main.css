@@ -3,6 +3,15 @@
 .version::after {
   content: "0.0.14";
 }
+.notes p {
+    font-size: 21px;
+    line-height: 1.58;
+    letter-spacing: -.003em;
+    margin: 38px 0 0 0!important;
+}
+ul li, ol li {
+    margin-top: 2rem;
+}
 .section-header {
     padding: 1rem .5rem;
     top: 0;
