@@ -3,18 +3,243 @@
   <channel>
     <title>Foda on Leandro.Ross - Personal Sitio </title>
     <link>https://leandro.ross.nom.br/tags/foda/</link>
-    <updated>Thu, 04 May 2017 10:24:15 BRT</updated>
+    <updated>Thu, 04 May 2017 13:56:41 BRT</updated>
     <language>en-us</language>
     
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     
     <item>
-      <title>bem bosta</title>
-      <link>https://leandro.ross.nom.br/post/bem-bosta/</link>
-      <pubDate>Thu, 04 May 2017 10:24:15 BRT</pubDate>
+      <title>Diferencas entre linguagens de programacao para web</title>
+      <link>https://leandro.ross.nom.br/post/diferencas-entre-linguagens-de-programacao-para-web/</link>
+      <pubDate>Thu, 04 May 2017 13:56:41 BRT</pubDate>
       
-      <guid>https://leandro.ross.nom.br/post/bem-bosta/</guid>
-      <description></description>
+      <guid>https://leandro.ross.nom.br/post/diferencas-entre-linguagens-de-programacao-para-web/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;ESTE E UM ARTIGO ESCRITO NO ANO 2009 MUITAS COISAS MUDARAM DE LA PARA 2017, ESTOU IMPORTANDO ESTE ARTIGO ANTIGO MEU PARA ESTE NOVO BLOG&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ola a todos&amp;hellip;. para quem não me conhece, sou desenvolvedor front-end e back-end, atualmente trabalho em um grupo de comunicação com 2 portais de noticias de alta escala.&lt;/p&gt;
+
+&lt;p&gt;Sempre procuro na internet sobre linguagens de programação e seus diferenciais, qual e a melhor, qual tem mais função, qual a linguagem mais rápida para se programar&amp;hellip; vejo poucas comparações sobre isto.. e vejo que algumas linguagens tender a ser melhor que outras porem você demora mais no desenvolvimento e testes, ja outras tendem a ter o desenvolvimento mais ágil e rápido. umas mais robustas outras menos. Todas lhe dão segurança para seu aplicativo, basta saber programar.&lt;/p&gt;
+
+&lt;p&gt;Atualmente contamos com inúmeras linguagens de programação para WEB algumas bem difundidas outras nem tanto. Para se ter uma idéia vou citar as Linguagens que mais se usam na internei. ( PHP , PYTHON, JAVA, RUBY, TCL, PERL, CGI, ASP, MIVA, COLDFUSION ) e varias outras que existem por mundo a fora, neste artigo vou comparar as linguagens mais atuais da internet.&lt;/p&gt;
+
+&lt;h2 id=&#34;aqui-vou-comparar-java-ruby-python-asp-e-php&#34;&gt;Aqui vou comparar JAVA, RUBY, PYTHON, ASP e PHP.&lt;/h2&gt;
+
+&lt;p&gt;Se você pesquisar no google sobre cada linguagem você vera o quão ela e difundida pelos usuários, abaixo vou mostrar os resultados buscados no google.com:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; PHP:      About 7,210,000,000 results
+&amp;gt; ASP:      About 1,250,000,000 results
+&amp;gt; PYTHON:   About 280,000,000 results
+&amp;gt; JAVA:     About 173,000,000 results 
+&amp;gt; RUBY:     About 48,200,000 results
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Claro que isto foi uma busca genérica, mas podemos ver que o PHP e a mais comentada, falada, difundida da internet.&lt;/p&gt;
+
+&lt;p&gt;Abaixo vou demonstrar um exemplo de um simples formulário escrita em cada linguagem, para terem uma idéia de qual linguagem e a mais rápida para desenvolvimento, lembrando que estou comparando qual a linguagem mais rápida para desenvolvimento e não a mais flexível, robusta ou segura&amp;hellip; Cada linguagem tem sua característica.&lt;/p&gt;
+
+&lt;h3 id=&#34;php&#34;&gt;PHP&lt;/h3&gt;
+
+&lt;p&gt;&amp;ndash; Para executar o código abaixo utilizei um sistema Apache + PHP5&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-PHP&#34;&gt;&amp;lt;form action=&amp;quot;?&amp;quot; method=&amp;quot;post&amp;quot;&amp;gt;
+  Nome: &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;nome&amp;quot; /&amp;gt;
+  Idade: &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;idade&amp;quot; /&amp;gt;
+  &amp;lt;input type=&amp;quot;submit&amp;quot; name=&amp;quot;submit&amp;quot; /&amp;gt;
+&amp;lt;/form&amp;gt;
+&amp;lt;?php
+  if(isset($_POST[&#39;submit&#39;])) {
+    echo &amp;quot;Bem-vindo &amp;quot; . $_POST[&amp;quot;nome&amp;quot;] . &amp;quot; voce tem &amp;quot; . $_POST[&amp;quot;idade&amp;quot;] . &amp;quot; anos.&amp;quot;;
+  }
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;asp&#34;&gt;ASP&lt;/h3&gt;
+
+&lt;p&gt;&amp;ndash; Para rodar o código abaixo utilizei um sistema IIS&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-HTML&#34;&gt;&amp;lt;form action=&amp;quot;?&amp;quot; method=&amp;quot;post&amp;quot;&amp;gt;
+  Nome: &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;nome&amp;quot; /&amp;gt;
+  Idade: &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;idade&amp;quot; /&amp;gt;
+  &amp;lt;input type=&amp;quot;submit&amp;quot; name=&amp;quot;submit&amp;quot; /&amp;gt;
+&amp;lt;/form&amp;gt;
+&amp;lt;%
+  if (Request.form(&amp;quot;nome&amp;quot;) &amp;lt;&amp;gt; &amp;quot;&amp;quot;) Then
+    response.write(&amp;quot;Bem vindo &amp;quot; &amp;amp; request.form(&amp;quot;nome&amp;quot;) &amp;amp; &amp;quot;&amp;lt;br /&amp;gt;&amp;quot;)
+    response.write(&amp;quot;Voce tem &amp;quot; &amp;amp; request.form(&amp;quot;idade&amp;quot;) &amp;amp; &amp;quot; anos&amp;quot;)
+  End If
+%&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;python&#34;&gt;PYTHON&lt;/h3&gt;
+
+&lt;p&gt;&amp;ndash; Para rodar o código abaixo utilizei um sistema Apache + PYTHON + MOD_PYTHON&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-PYTHON&#34;&gt;#!/usr/bin/python
+import cgi
+import cgitb; cgitb.enable()
+form = cgi.FieldStorage()
+paginahtml = &amp;quot;&amp;quot;&amp;quot;Content-Type: text/html\n
+  &amp;lt;form action=&amp;quot;?&amp;quot; method=&amp;quot;post&amp;quot;&amp;gt;
+    Nome: &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;nome&amp;quot; /&amp;gt;
+    Idade: &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;idade&amp;quot; /&amp;gt;
+    &amp;lt;input type=&amp;quot;submit&amp;quot; name=&amp;quot;submit&amp;quot; /&amp;gt;
+  &amp;lt;/form&amp;gt;
+ &amp;quot;&amp;quot;&amp;quot;
+print paginahtml
+if &#39;submit&#39; in form:
+ if &#39;nome&#39; in form:
+  if &#39;idade&#39; in form:
+   Nome = form[&#39;nome&#39;].value
+   Idade = form[&#39;idade&#39;].value
+   print &#39;Bem vindo &#39; + Nome + &#39;&amp;lt;br /&amp;gt;&#39;
+   print &#39;Voce tem &#39; + Idade + &#39; anos&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;ruby&#34;&gt;RUBY&lt;/h3&gt;
+
+&lt;p&gt;&amp;ndash; Para testar o código utilizei um ambiente com Apache + RUBY + mod_ruby&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Arquivo HTML&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-HTML&#34;&gt;&amp;lt;form action=&amp;quot;processa.rb&amp;quot; method=&amp;quot;post&amp;quot;&amp;gt;
+  Nome: &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;nome&amp;quot; /&amp;gt;
+  Idade: &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;idade&amp;quot; /&amp;gt;
+  &amp;lt;input type=&amp;quot;submit&amp;quot; name=&amp;quot;submit&amp;quot; /&amp;gt;
+&amp;lt;/form&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Arquivo RUBY (processa.rb)&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-RUBY&#34;&gt;require &#39;cgi&#39;
+cgi = CGI.new(&amp;quot;html4&amp;quot;)
+cgi.out{
+  cgi.html{
+    cgi.body{
+     cgi.p { &amp;quot;Bem vindo &amp;quot; +cgi[&#39;nome&#39;] + &amp;quot;&amp;lt;br /&amp;gt;&amp;quot; } +
+     cgi.p { &amp;quot;Voce tem &amp;quot; + cgi[&#39;idade&#39;] + &amp;quot; anos&amp;quot; }
+    }
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;java&#34;&gt;JAVA&lt;/h3&gt;
+
+&lt;p&gt;&amp;ndash; Não cheguei a testar o código abaixo.. retirei ele do site &lt;a href=&#34;http://bit.ly/bTIEPC&#34;&gt;http://bit.ly/bTIEPC&lt;/a&gt; e fiz algumas modificações seguindo a logica.&lt;/p&gt;
+
+&lt;h3 id=&#34;pros-x-contras&#34;&gt;&lt;strong&gt;&lt;em&gt;PROS X CONTRAS&lt;/em&gt;&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Vocês acabaram de ver o mesmo modelo de formulário rodado em vários tipos de linguagens umas mais complexas outras nem tanto, algumas com muitos arquivos outras com apenas 1 arquivo. Todos os códigos que escrevi acima, foram revisados e testados a não ser o JAVA pois não tenho servidor para rodar e testar o mesmo, as demais foram todas testadas em Ambiente LINUX + APACHE.
+Vou começar a citar os PROS de cada linguagem que vimos a cima e logo abaixo irei resumir em poucas linhas os CONTRA de cada linguagem, para assim&lt;/p&gt;
+
+&lt;h3 id=&#34;pros-de-cada-linguagem&#34;&gt;&lt;strong&gt;&lt;em&gt;PROS de Cada Linguagem&lt;/em&gt;&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;PHP&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;ndash; PHP é considerada mais rápida e mais eficiente para tarefas complexas e simples de programação e para tentar novas idéias.
+Tem otina integração com diversos banco de dados, sistema de arquivos, manipulação de imagens(requer plugin GD), suporta expressões regulares, tem api própria para manipulação de banco de dados(PDO).
+Existe uma vasta documentação e artigos na internet sobre o PHP, muitos scripts prontos, vários frameworks para agilizar o desenvolvimento.
+Tem funcionamento com vários Web Server`s incluindo Apache o que significa hospedagem barata.
+O manual online é amplamente considerado como o melhor de qualquer linguagem de programação.
+Não precisa ser Compilado nada. com algumas linhas de código você já cria um programa.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;ASP&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;ndash; Código-fonte protegido através da ferramenta de encritação da Microsoft, que já vem incluído no IIS.
+Banco de dados a linguagem ASP funciona muito bem para visualizar e manipular informações em bancos de dados que suportam OBDC.
+Linguagem similar ao Visual Basic - se você já programa em Visual Basic terá muita facilidade em aprender ASP, pois ambas as linguagens são parecidas.
+Aprendizado descomplicado - mesmo que você não conheça Visual Basic, poderá aprender ASP sem dificuldades. A linguagem é clara e cheia de recursos.
+A Microsoft tem uma ampla documentação sobre ASP e Visual Basic, alem de vários artigos, sites e scripts espalhados pela internet.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;PYTHON&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;ndash; Python inclui módulos, exceções, tipagem dinâmica, muito alto nível, os tipos de dados dinâmicos e classes. Possui interfaces para as chamadas de sistema e bibliotecas, bem como aos vários sistemas baseados no Windows. Livre disponibilidade (como Perl, Python é open source). Estabilidade (Python está na versão 2.6.6 neste momento e, como já observado anteriormente, é mais velho do que Java). Bom suporte para objetos, módulos e outros mecanismos de reutilização. Fácil integração e extensibilidade usando C e Java.
+Economias de custos no desenvolvimento e manutenção. Roda em Plataforma Windows ou Linux(Unix).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;JAVA&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;ndash; Sintaxe familiar para programadores que sabem qualquer linguagem baseada em C.
+A Plataforma JAVA tem uma grande gama de bibliotecas e classes. Boa portabilidade podendo rodar em qualquer sistema operacional. Tem uma documentação completa na internet alem de vários frameworks para lhe ajudar a desenvolver mais rapidamente seus sistemas.
+Varias IDE`s para agilizar o desenvolvimento e manutenção de aplicações escritas em JAVA.
+Tem um ótimo desempenho para aplicações de larga escala.
+Aplicativos podem ser desenvolvidos mais rapidamente que em C/C++.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;RUBY&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;ndash; Vou citar os prós do Ruby on Rails (Framework  escrita em Ruby para desenvolvimento web). Ótima linguagem para desenvolvimento rápido, nos economiza uma tonelada de trabalho ao se criar um novo aplicativo.
+Ruby é uma linguagem concisa (em comparação com mais tradição linguagens C-style), bem pensado, e muito legível.
+Lotes de interessante plug-ins e gemas você pode usar para poupar tempo.
+Tem uma boa documentação na internet, muitos artigos e tutoriais estão espalhados por ai..
+Funciona em ambientes Linux(Unix) lhe trazendo muito economia ou você pode utilizar clusters de VPS. ruby te da o suporte a isso. Ruby é uma linguagem totalmente orientada a objetos apresentados.
+A tecnologia template construído em Rails pode ser usado para gerar páginas web, e-mails, documentos XML ou qualquer documento de texto que exige conteúdo dinâmico.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;contras-de-cada-linguagem&#34;&gt;&lt;strong&gt;&lt;em&gt;CONTRAS de Cada Linguagem&lt;/em&gt;&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;PHP&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;ndash; Fraca Tipagem, esta engatinhando a Orientação de Objetos, Não muito rápido por não trabalhar com tipagem, tudo é dinâmico, a verificação também é feita dinâmica, aumentando o tempo de interpretação.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;ASP&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;ndash; Roda somente em ambiente Windows sob o IIS da Microsoft.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;PYTHON&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;ndash; Poucos artigos na web falando sobre python for web. Poucos e raros profissionais. Ausência de um apoio comercial, mesmo para um projeto Open Source (embora esta situação está mudando). Software de desempenho (embora benchmarks, demonstraram repetidamente Python é comparável ao de Java, na maioria dos aplicativos). Python sofre com a falta de documentação, extensa acessível e livros publicados.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;JAVA&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;ndash; Grande parte do código Java escrito por programadores experientes. Utiliza muita memoria da maquina que esta rodando o seu código. Se você não for cuidadoso, você pode escrever programas lentos. Bugs em implementações de biblioteca. Tende a ter a mão e obra mais cara dentre as linguagens que citei no artigo.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;RUBY&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;ndash; Difícil encontrar hospedagem a preços acessíveis. Difícil de encontrar profissionais para desenvolvimento. Nem tudo o que se lé sobre ruby realmente funciona. Mão de obra cara.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Acho que deu para se ter uma idéia de qual seria a melhor linguagem para desenvolver seu sistema, claro vale ressaltar que você precisa fazer um estudo sobre qual a espectativa de crescimento do seu projeto&amp;hellip; para poder escolher a melhor linguagem adequada&amp;hellip; Muitos portais nacionais são desenvolvidos em JAVA pela sua escalabilidade&amp;hellip; mas temos também enormes sites escritos em PHP (facebook.com).. no caso de RUBY temos o (twitter.com)&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Vou terminando este artigo e qualquer duvida podem perguntar se estiver no meu conhecimento responderei.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

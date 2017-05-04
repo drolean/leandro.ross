@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="https://github.com/drolean" />
+    <title> Diferencas entre linguagens de programacao para web &middot; Leandro.Ross - Personal Sitio </title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.2.14/spectre.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.2.14/spectre-icons.css" />
+    <link rel="stylesheet" href="https://leandro.ross.nom.br/css/main.css">
+    
+    <link href="" rel="alternate" type="application/rss+xml" title="Leandro.Ross - Personal Sitio" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>    
+</head>
+<body>
+
+<section class="section section-header bg-gray">
+    <section class="grid-header container grid-1280">
+        <nav class="navbar">
+            <section class="navbar-section">
+                <a href="#sidebar" class="btn btn-lg btn-link btn-action show-sm"><i class="icon icon-menu"></i></a>
+                <a href="https://leandro.ross.nom.br/" class="navbar-brand mr-10" title="link to homepage for Leandro.Ross - Personal Sitio">Leandro.Ross</a>
+                <a href="#" class="btn btn-link">Menu</a>
+            </section>
+            <section class="navbar-section">
+                <a href="https://github.com/drolean" class="btn btn-primary">GitHub</a>
+            </section>
+        </nav>
+    </section>
+</section>
+
+<section class="container grid-1280">
+    <div class="columns">
+
+                <div id="sidebar" class="docs-sidebar column col-3 col-sm-12">
+        
+            <div class="panel">
+                <div class="panel-header text-center">
+                    <figure class="avatar avatar-xl">
+                        <img src="https://pt.gravatar.com/userimage/10441565/d6ac82c9c2acb95567a0ce53ac866163.jpeg">
+                    </figure>
+                    <div class="panel-title mt-10">Leandro Ross</div>
+                    <div class="panel-subtitle">"Churupim"</div>
+                </div>
+            </div>            
+        </div>
+        <a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
+
+        <div class="divider-vert hide-sm"></div>
+
+        <div class="column">
+            <section class="container">
+                <header class="text-center">
+                    <h1>Diferencas entre linguagens de programacao para web</h1>
+                    <div class="float-left time"><time class="label">Thu, May 4, 2017 - Tempo de leitura 8 Min </time></div>
+                </header>
+            </section>
+
+            <section class="container">
+                <div class="notes text-large">
+                    
+
+<blockquote>
+<p><strong><em>ESTE E UM ARTIGO ESCRITO NO ANO 2009 MUITAS COISAS MUDARAM DE LA PARA 2017, ESTOU IMPORTANDO ESTE ARTIGO ANTIGO MEU PARA ESTE NOVO BLOG</em></strong></p>
+</blockquote>
+
+<p>Ola a todos&hellip;. para quem não me conhece, sou desenvolvedor front-end e back-end, atualmente trabalho em um grupo de comunicação com 2 portais de noticias de alta escala.</p>
+
+<p>Sempre procuro na internet sobre linguagens de programação e seus diferenciais, qual e a melhor, qual tem mais função, qual a linguagem mais rápida para se programar&hellip; vejo poucas comparações sobre isto.. e vejo que algumas linguagens tender a ser melhor que outras porem você demora mais no desenvolvimento e testes, ja outras tendem a ter o desenvolvimento mais ágil e rápido. umas mais robustas outras menos. Todas lhe dão segurança para seu aplicativo, basta saber programar.</p>
+
+<p>Atualmente contamos com inúmeras linguagens de programação para WEB algumas bem difundidas outras nem tanto. Para se ter uma idéia vou citar as Linguagens que mais se usam na internei. ( PHP , PYTHON, JAVA, RUBY, TCL, PERL, CGI, ASP, MIVA, COLDFUSION ) e varias outras que existem por mundo a fora, neste artigo vou comparar as linguagens mais atuais da internet.</p>
+
+<h2 id="aqui-vou-comparar-java-ruby-python-asp-e-php">Aqui vou comparar JAVA, RUBY, PYTHON, ASP e PHP.</h2>
+
+<p>Se você pesquisar no google sobre cada linguagem você vera o quão ela e difundida pelos usuários, abaixo vou mostrar os resultados buscados no google.com:</p>
+
+<pre><code>&gt; PHP:      About 7,210,000,000 results
+&gt; ASP:      About 1,250,000,000 results
+&gt; PYTHON:   About 280,000,000 results
+&gt; JAVA:     About 173,000,000 results 
+&gt; RUBY:     About 48,200,000 results
+</code></pre>
+
+<p>Claro que isto foi uma busca genérica, mas podemos ver que o PHP e a mais comentada, falada, difundida da internet.</p>
+
+<p>Abaixo vou demonstrar um exemplo de um simples formulário escrita em cada linguagem, para terem uma idéia de qual linguagem e a mais rápida para desenvolvimento, lembrando que estou comparando qual a linguagem mais rápida para desenvolvimento e não a mais flexível, robusta ou segura&hellip; Cada linguagem tem sua característica.</p>
+
+<h3 id="php">PHP</h3>
+
+<p>&ndash; Para executar o código abaixo utilizei um sistema Apache + PHP5</p>
+
+<pre><code class="language-PHP">&lt;form action=&quot;?&quot; method=&quot;post&quot;&gt;
+  Nome: &lt;input type=&quot;text&quot; name=&quot;nome&quot; /&gt;
+  Idade: &lt;input type=&quot;text&quot; name=&quot;idade&quot; /&gt;
+  &lt;input type=&quot;submit&quot; name=&quot;submit&quot; /&gt;
+&lt;/form&gt;
+&lt;?php
+  if(isset($_POST['submit'])) {
+    echo &quot;Bem-vindo &quot; . $_POST[&quot;nome&quot;] . &quot; voce tem &quot; . $_POST[&quot;idade&quot;] . &quot; anos.&quot;;
+  }
+?&gt;
+</code></pre>
+
+<h3 id="asp">ASP</h3>
+
+<p>&ndash; Para rodar o código abaixo utilizei um sistema IIS</p>
+
+<pre><code class="language-HTML">&lt;form action=&quot;?&quot; method=&quot;post&quot;&gt;
+  Nome: &lt;input type=&quot;text&quot; name=&quot;nome&quot; /&gt;
+  Idade: &lt;input type=&quot;text&quot; name=&quot;idade&quot; /&gt;
+  &lt;input type=&quot;submit&quot; name=&quot;submit&quot; /&gt;
+&lt;/form&gt;
+&lt;%
+  if (Request.form(&quot;nome&quot;) &lt;&gt; &quot;&quot;) Then
+    response.write(&quot;Bem vindo &quot; &amp; request.form(&quot;nome&quot;) &amp; &quot;&lt;br /&gt;&quot;)
+    response.write(&quot;Voce tem &quot; &amp; request.form(&quot;idade&quot;) &amp; &quot; anos&quot;)
+  End If
+%&gt;
+</code></pre>
+
+<h3 id="python">PYTHON</h3>
+
+<p>&ndash; Para rodar o código abaixo utilizei um sistema Apache + PYTHON + MOD_PYTHON</p>
+
+<pre><code class="language-PYTHON">#!/usr/bin/python
+import cgi
+import cgitb; cgitb.enable()
+form = cgi.FieldStorage()
+paginahtml = &quot;&quot;&quot;Content-Type: text/html\n
+  &lt;form action=&quot;?&quot; method=&quot;post&quot;&gt;
+    Nome: &lt;input type=&quot;text&quot; name=&quot;nome&quot; /&gt;
+    Idade: &lt;input type=&quot;text&quot; name=&quot;idade&quot; /&gt;
+    &lt;input type=&quot;submit&quot; name=&quot;submit&quot; /&gt;
+  &lt;/form&gt;
+ &quot;&quot;&quot;
+print paginahtml
+if 'submit' in form:
+ if 'nome' in form:
+  if 'idade' in form:
+   Nome = form['nome'].value
+   Idade = form['idade'].value
+   print 'Bem vindo ' + Nome + '&lt;br /&gt;'
+   print 'Voce tem ' + Idade + ' anos'
+</code></pre>
+
+<h3 id="ruby">RUBY</h3>
+
+<p>&ndash; Para testar o código utilizei um ambiente com Apache + RUBY + mod_ruby</p>
+
+<p><strong><em>Arquivo HTML</em></strong></p>
+
+<pre><code class="language-HTML">&lt;form action=&quot;processa.rb&quot; method=&quot;post&quot;&gt;
+  Nome: &lt;input type=&quot;text&quot; name=&quot;nome&quot; /&gt;
+  Idade: &lt;input type=&quot;text&quot; name=&quot;idade&quot; /&gt;
+  &lt;input type=&quot;submit&quot; name=&quot;submit&quot; /&gt;
+&lt;/form&gt;
+</code></pre>
+
+<p><strong><em>Arquivo RUBY (processa.rb)</em></strong></p>
+
+<pre><code class="language-RUBY">require 'cgi'
+cgi = CGI.new(&quot;html4&quot;)
+cgi.out{
+  cgi.html{
+    cgi.body{
+     cgi.p { &quot;Bem vindo &quot; +cgi['nome'] + &quot;&lt;br /&gt;&quot; } +
+     cgi.p { &quot;Voce tem &quot; + cgi['idade'] + &quot; anos&quot; }
+    }
+  }
+}
+</code></pre>
+
+<h3 id="java">JAVA</h3>
+
+<p>&ndash; Não cheguei a testar o código abaixo.. retirei ele do site <a href="http://bit.ly/bTIEPC">http://bit.ly/bTIEPC</a> e fiz algumas modificações seguindo a logica.</p>
+
+<h3 id="pros-x-contras"><strong><em>PROS X CONTRAS</em></strong></h3>
+
+<p>Vocês acabaram de ver o mesmo modelo de formulário rodado em vários tipos de linguagens umas mais complexas outras nem tanto, algumas com muitos arquivos outras com apenas 1 arquivo. Todos os códigos que escrevi acima, foram revisados e testados a não ser o JAVA pois não tenho servidor para rodar e testar o mesmo, as demais foram todas testadas em Ambiente LINUX + APACHE.
+Vou começar a citar os PROS de cada linguagem que vimos a cima e logo abaixo irei resumir em poucas linhas os CONTRA de cada linguagem, para assim</p>
+
+<h3 id="pros-de-cada-linguagem"><strong><em>PROS de Cada Linguagem</em></strong></h3>
+
+<blockquote>
+<p><strong><em>PHP</em></strong></p>
+
+<p>&ndash; PHP é considerada mais rápida e mais eficiente para tarefas complexas e simples de programação e para tentar novas idéias.
+Tem otina integração com diversos banco de dados, sistema de arquivos, manipulação de imagens(requer plugin GD), suporta expressões regulares, tem api própria para manipulação de banco de dados(PDO).
+Existe uma vasta documentação e artigos na internet sobre o PHP, muitos scripts prontos, vários frameworks para agilizar o desenvolvimento.
+Tem funcionamento com vários Web Server`s incluindo Apache o que significa hospedagem barata.
+O manual online é amplamente considerado como o melhor de qualquer linguagem de programação.
+Não precisa ser Compilado nada. com algumas linhas de código você já cria um programa.</p>
+</blockquote>
+
+<hr />
+
+<blockquote>
+<p><strong><em>ASP</em></strong></p>
+
+<p>&ndash; Código-fonte protegido através da ferramenta de encritação da Microsoft, que já vem incluído no IIS.
+Banco de dados a linguagem ASP funciona muito bem para visualizar e manipular informações em bancos de dados que suportam OBDC.
+Linguagem similar ao Visual Basic - se você já programa em Visual Basic terá muita facilidade em aprender ASP, pois ambas as linguagens são parecidas.
+Aprendizado descomplicado - mesmo que você não conheça Visual Basic, poderá aprender ASP sem dificuldades. A linguagem é clara e cheia de recursos.
+A Microsoft tem uma ampla documentação sobre ASP e Visual Basic, alem de vários artigos, sites e scripts espalhados pela internet.</p>
+</blockquote>
+
+<hr />
+
+<blockquote>
+<p><strong><em>PYTHON</em></strong></p>
+
+<p>&ndash; Python inclui módulos, exceções, tipagem dinâmica, muito alto nível, os tipos de dados dinâmicos e classes. Possui interfaces para as chamadas de sistema e bibliotecas, bem como aos vários sistemas baseados no Windows. Livre disponibilidade (como Perl, Python é open source). Estabilidade (Python está na versão 2.6.6 neste momento e, como já observado anteriormente, é mais velho do que Java). Bom suporte para objetos, módulos e outros mecanismos de reutilização. Fácil integração e extensibilidade usando C e Java.
+Economias de custos no desenvolvimento e manutenção. Roda em Plataforma Windows ou Linux(Unix).</p>
+</blockquote>
+
+<hr />
+
+<blockquote>
+<p><strong><em>JAVA</em></strong></p>
+
+<p>&ndash; Sintaxe familiar para programadores que sabem qualquer linguagem baseada em C.
+A Plataforma JAVA tem uma grande gama de bibliotecas e classes. Boa portabilidade podendo rodar em qualquer sistema operacional. Tem uma documentação completa na internet alem de vários frameworks para lhe ajudar a desenvolver mais rapidamente seus sistemas.
+Varias IDE`s para agilizar o desenvolvimento e manutenção de aplicações escritas em JAVA.
+Tem um ótimo desempenho para aplicações de larga escala.
+Aplicativos podem ser desenvolvidos mais rapidamente que em C/C++.</p>
+</blockquote>
+
+<hr />
+
+<blockquote>
+<p><strong><em>RUBY</em></strong></p>
+
+<p>&ndash; Vou citar os prós do Ruby on Rails (Framework  escrita em Ruby para desenvolvimento web). Ótima linguagem para desenvolvimento rápido, nos economiza uma tonelada de trabalho ao se criar um novo aplicativo.
+Ruby é uma linguagem concisa (em comparação com mais tradição linguagens C-style), bem pensado, e muito legível.
+Lotes de interessante plug-ins e gemas você pode usar para poupar tempo.
+Tem uma boa documentação na internet, muitos artigos e tutoriais estão espalhados por ai..
+Funciona em ambientes Linux(Unix) lhe trazendo muito economia ou você pode utilizar clusters de VPS. ruby te da o suporte a isso. Ruby é uma linguagem totalmente orientada a objetos apresentados.
+A tecnologia template construído em Rails pode ser usado para gerar páginas web, e-mails, documentos XML ou qualquer documento de texto que exige conteúdo dinâmico.</p>
+</blockquote>
+
+<h3 id="contras-de-cada-linguagem"><strong><em>CONTRAS de Cada Linguagem</em></strong></h3>
+
+<blockquote>
+<p><strong><em>PHP</em></strong></p>
+
+<p>&ndash; Fraca Tipagem, esta engatinhando a Orientação de Objetos, Não muito rápido por não trabalhar com tipagem, tudo é dinâmico, a verificação também é feita dinâmica, aumentando o tempo de interpretação.</p>
+</blockquote>
+
+<hr />
+
+<blockquote>
+<p><strong><em>ASP</em></strong></p>
+
+<p>&ndash; Roda somente em ambiente Windows sob o IIS da Microsoft.</p>
+</blockquote>
+
+<hr />
+
+<blockquote>
+<p><strong><em>PYTHON</em></strong></p>
+
+<p>&ndash; Poucos artigos na web falando sobre python for web. Poucos e raros profissionais. Ausência de um apoio comercial, mesmo para um projeto Open Source (embora esta situação está mudando). Software de desempenho (embora benchmarks, demonstraram repetidamente Python é comparável ao de Java, na maioria dos aplicativos). Python sofre com a falta de documentação, extensa acessível e livros publicados.</p>
+</blockquote>
+
+<hr />
+
+<blockquote>
+<p><strong><em>JAVA</em></strong></p>
+
+<p>&ndash; Grande parte do código Java escrito por programadores experientes. Utiliza muita memoria da maquina que esta rodando o seu código. Se você não for cuidadoso, você pode escrever programas lentos. Bugs em implementações de biblioteca. Tende a ter a mão e obra mais cara dentre as linguagens que citei no artigo.</p>
+</blockquote>
+
+<hr />
+
+<blockquote>
+<p><strong><em>RUBY</em></strong></p>
+
+<p>&ndash; Difícil encontrar hospedagem a preços acessíveis. Difícil de encontrar profissionais para desenvolvimento. Nem tudo o que se lé sobre ruby realmente funciona. Mão de obra cara.</p>
+</blockquote>
+
+<hr />
+
+<p>Acho que deu para se ter uma idéia de qual seria a melhor linguagem para desenvolver seu sistema, claro vale ressaltar que você precisa fazer um estudo sobre qual a espectativa de crescimento do seu projeto&hellip; para poder escolher a melhor linguagem adequada&hellip; Muitos portais nacionais são desenvolvidos em JAVA pela sua escalabilidade&hellip; mas temos também enormes sites escritos em PHP (facebook.com).. no caso de RUBY temos o (twitter.com)&hellip;</p>
+
+<p>Vou terminando este artigo e qualquer duvida podem perguntar se estiver no meu conhecimento responderei.</p>
+
+                </div>
+            </section>
+
+            <div id="disqus_thread"></div>
+
+<script type="text/javascript">
+  var disqusUsername = "leandroross";
+  (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = '//' + disqusUsername + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+            <ul class="pagination">
+                
+                <li class="page-item page-prev">
+                    <a href="https://leandro.ross.nom.br/post/reiniciando-no-submundo-do-blog/">
+                        <p class="page-item-subtitle">Previous</p>
+                        <h3 class="page-item-title">Reiniciando no submundo do Blog</h3>
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+
+
+</section>
+
+<footer class="bg-gray">
+    <section id="copyright" class="grid-footer container grid-1280">
+        <p><a href="https://github.com/drolean">GitHub Repo</a> | Version <span class="version"></span></p>
+        <p>Designed and built with ♥ by <a href="https://github.com/drolean">Leandro Ross</a></p>
+    </section>
+</footer>

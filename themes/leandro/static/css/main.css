@@ -3,11 +3,14 @@
 .version::after {
   content: "0.0.14";
 }
+.notes blockquote p {
+    margin: auto !important;
+}
 .notes p {
     font-size: 21px;
     line-height: 1.58;
     letter-spacing: -.003em;
-    margin: 38px 0 0 0!important;
+    margin: 22px 0!important;
 }
 ul li, ol li {
     margin-top: 2rem;
