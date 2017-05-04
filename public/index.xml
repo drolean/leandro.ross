@@ -3,27 +3,60 @@
   <channel>
     <title>Leandro.Ross - Personal Sitio on Leandro.Ross - Personal Sitio </title>
     <link>https://leandro.ross.nom.br/</link>
-    <updated>Thu, 04 May 2017 10:24:15 BRT</updated>
+    <updated>Thu, 04 May 2017 09:43:21 BRT</updated>
     <language>en-us</language>
     
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     
     <item>
-      <title>bem bosta</title>
-      <link>https://leandro.ross.nom.br/post/bem-bosta/</link>
-      <pubDate>Thu, 04 May 2017 10:24:15 BRT</pubDate>
-      
-      <guid>https://leandro.ross.nom.br/post/bem-bosta/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>welcome</title>
-      <link>https://leandro.ross.nom.br/post/welcome/</link>
+      <title>Reiniciando no submundo do Blog</title>
+      <link>https://leandro.ross.nom.br/post/reiniciando-no-submundo-do-blog/</link>
       <pubDate>Thu, 04 May 2017 09:43:21 BRT</pubDate>
       
-      <guid>https://leandro.ross.nom.br/post/welcome/</guid>
-      <description>&lt;p&gt;In the serverless architecture, functions are the unit of scale.  This provides useful isolation of your logic, leaving you in a very agile position when you are in production and you want to modify your application components individually, without affecting the entire system. The downside is when functions are also treated as the unit of development.  Every function requires its own scaffolding and code dependencies, which is a pain to manage.  Who wants to do &lt;code&gt;npm install yada-yada --save&lt;/code&gt; or &lt;code&gt;npm update&lt;/code&gt; 40 different times?  The focus on individual Lambdas has been the recommended practice.  We implemented it in V.0 of the Framework, but it hasn’t made our users as happy as they could be, and will be, in Version 1&amp;hellip;&lt;/p&gt;
+      <guid>https://leandro.ross.nom.br/post/reiniciando-no-submundo-do-blog/</guid>
+      <description>
+
+&lt;h3 id=&#34;ahhhhhhhhhhhhh&#34;&gt;Ahhhhhhhhhhhhh!!!!!!!!&lt;/h3&gt;
+
+&lt;p&gt;Vou criar um blog, que coisa mais fácil vai no site do &lt;strong&gt;wordpress&lt;/strong&gt; e cria um gratuito ou vai no &lt;strong&gt;blogspot&lt;/strong&gt; e cria um gratuito ou &lt;strong&gt;medium&lt;/strong&gt; ou não cria nada. Como iniciar um blog, sendo um developer e não querer utilizar tecnologias que você conhece, quero criar um blog mas quero algo novo, quero algo desafiador.&lt;/p&gt;
+
+&lt;p&gt;O que fazer!!! Quero criar um blog, mas quero ser diferente, vou contar um pouco dos últimos dois dias ate criar esse blog. &lt;em&gt;Nem sei por que criei este blog, talvez uma emoção de momento ou para se ter um domínio para hospedar meus trabalhos, vai saber nem eu mesmo me intendo&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1° Dia&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Procurar novas tecnologias que eu não conheço ou que nunca trabalhei, como um belo intendedor de google &amp;ldquo;como buscar uma informação&amp;rdquo;, fiz uma pesquisa por tecnologias que me chamaram atenção logo na apresentação e em sua data de criação, quanto mais recente melhor para o meu projeto. Primeiro fui buscar tecnologias de CSS, Javascript e um framework novo ou algo que me permitisse desenvolver e publicar esse meu blog.&lt;/p&gt;
+
+&lt;p&gt;Abaixo vou citar algumas coisas na qual encontrei nesse primeiro momento.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;CSS Framework&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;ndash; A primeira busca por coisas novas me surgiu esses dois caras, um já tinha visto em alguns videos o pessoal o utilizar o &lt;strong&gt;Bulma&lt;/strong&gt; porem o outro nunca tinha ouvido falar, fui conferir a documentação a comunidade e o ultimo release quando foi lançado. O que mais chamou a minha atenção foi o &lt;strong&gt;Spectre&lt;/strong&gt;, acho que pela documentação que me apresentou alguns exemplos interessantes. Ao escrever este texto que fui notar, sou entusiasta e desenvolvedor de &lt;strong&gt;SASS&lt;/strong&gt; e notei agora que o escolhido e &lt;strong&gt;LESS&lt;/strong&gt;, mesmo assim gostei do Spectre para este projeto. &lt;em&gt;pronto agora tenho um framework de css&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://picturepan2.github.io/spectre/index.html&#34;&gt;https://picturepan2.github.io/spectre/index.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://bulma.io/&#34;&gt;http://bulma.io/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Javascript&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;ndash; Com javascript foi a mesma coisa que a busca de CSS o primeiro resultado e o unico foi este cara, que apenas dei uma olhada na documentação &lt;em&gt;sabe aquela olhada que o scroll desce em um segundo&lt;/em&gt; foi bem isso que eu fiz e coloquei na mente que iria usar ele, sem mesmo saber o por que usuária uma lib de javascript. &lt;strong&gt;nem tem javascript no site&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://svelte.technology/&#34;&gt;https://svelte.technology/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Web Framework&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;ndash; Não sei se posso dizer Web Framework mas vou citar assim, para a tecnologia que iria gerir o blog, esta busca foi complicada e difícil encontrar algo novo ainda mais quando você e envolvido já em uma comunidade como no meu caso, trabalho com &lt;strong&gt;PHP&lt;/strong&gt; mais precisamente com &lt;strong&gt;Laravel&lt;/strong&gt; e muitas das minhas buscas me retornam frameworks de php porem eu queria algo novo, e nas buscas os resultados eram sempre os mesmos &amp;ldquo;Synfony, Laravel, YUII, CodeIgniter, Cake ou Zend&amp;rdquo; já passei por alguns desses citados, e como seria um blog algo fácil e sem complicação, a minha busca passou a procurar algo mais dinâmico, para um desenvolvimento simples e rápido.
+&amp;ndash; Em um post do SitePoint vi um resultado de pesquisa e um nome me chamou a atenção &lt;strong&gt;PHPIXIE&lt;/strong&gt; em primeira visita ao site um texto e um botão muito chamativo &lt;strong&gt;&amp;ldquo;LEARN PHPIXIE IN 30 MINUTES&amp;rdquo;&lt;/strong&gt; opa acho que encontrei o meu novo framework.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://phpixie.com/&#34;&gt;https://phpixie.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Novas Definições&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
     </item>
     

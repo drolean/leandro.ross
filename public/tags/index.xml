@@ -3,37 +3,10 @@
   <channel>
     <title>Tags on Leandro.Ross - Personal Sitio </title>
     <link>https://leandro.ross.nom.br/tags/</link>
-    <updated>Thu, 04 May 2017 10:24:15 BRT</updated>
+    <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
     <language>en-us</language>
     
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    
-    <item>
-      <title>Development</title>
-      <link>https://leandro.ross.nom.br/tags/development/</link>
-      <pubDate>Thu, 04 May 2017 10:24:15 BRT</pubDate>
-      
-      <guid>https://leandro.ross.nom.br/tags/development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Foda</title>
-      <link>https://leandro.ross.nom.br/tags/foda/</link>
-      <pubDate>Thu, 04 May 2017 10:24:15 BRT</pubDate>
-      
-      <guid>https://leandro.ross.nom.br/tags/foda/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Leandro</title>
-      <link>https://leandro.ross.nom.br/tags/leandro/</link>
-      <pubDate>Thu, 04 May 2017 10:24:15 BRT</pubDate>
-      
-      <guid>https://leandro.ross.nom.br/tags/leandro/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>
