@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="https://github.com/drolean" />
+    <title> GoHugo - Um site para desenvolvedores sem medo &middot; Leandro.Ross - Personal Sitio </title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.2.14/spectre.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.2.14/spectre-icons.css" />
+    <link rel="stylesheet" href="https://www.leandro.ross.nom.br/css/main.css">
+    
+    <link href="" rel="alternate" type="application/rss+xml" title="Leandro.Ross - Personal Sitio" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>    
+</head>
+<body>
+
+<section class="section section-header bg-gray">
+    <section class="grid-header container grid-1280">
+        <nav class="navbar">
+            <section class="navbar-section">
+                <a href="#sidebar" class="btn btn-lg btn-link btn-action show-sm"><i class="icon icon-menu"></i></a>
+                <a href="https://www.leandro.ross.nom.br/" class="navbar-brand mr-10" title="link to homepage for Leandro.Ross - Personal Sitio">Leandro.Ross</a>
+                <a href="#" class="btn btn-link">Menu</a>
+            </section>
+            <section class="navbar-section">
+                <a href="https://github.com/drolean" class="btn btn-primary">GitHub</a>
+            </section>
+        </nav>
+    </section>
+</section>
+
+<section class="container grid-1280">
+    <div class="columns">
+
+                <div id="sidebar" class="docs-sidebar column col-3 col-sm-12">
+        
+            <div class="panel">
+                <div class="panel-header text-center">
+                    <figure class="avatar avatar-xl">
+                        <img src="https://pt.gravatar.com/userimage/10441565/d6ac82c9c2acb95567a0ce53ac866163.jpeg">
+                    </figure>
+                    <div class="panel-title mt-10">Leandro Ross</div>
+                    <div class="panel-subtitle">"Churupim"</div>
+                </div>
+            </div>            
+        </div>
+        <a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
+
+        <div class="divider-vert hide-sm"></div>
+
+        <div class="column">
+            <section class="container">
+                <header class="text-center">
+                    <h1>GoHugo - Um site para desenvolvedores sem medo</h1>
+                    <div class="float-left time"><time class="label">Fri, May 5, 2017 - Tempo de leitura 5 Min </time></div>
+                </header>
+            </section>
+
+            <section class="container">
+                <div class="notes text-large">
+                    
+
+<h2 id="introdução">Introdução</h2>
+
+<p>Aprenda como iniciar com Hugo, vou explicar de forma clara como se gerar um site/blog do zero e fazer o deploy em um servidor rodando nginx e github. Este tutorial fará exatamente isso.</p>
+
+<h2 id="instalando-hugo">Instalando Hugo</h2>
+
+<p>Vamos começar do zero, como se estivesse acontecido o bigbang a poucos segundos e você precisasse de fogo para se aquecer e se proteger dos perigos que o rondam, como sou usuário do windows em desktop,</p>
+
+<h3 id="windows">Windows</h3>
+
+<p>Primeiro passo seria a criação da estrutura de pastas, conforme a própria documentação do Hugo sugere a instalação vou seguir aqui também, mão na massa vamos criar as seguintes pastas <code>c:\hugo</code>  dentro da pasta vamos criar a subpasta <code>sites</code> temos agora duas pasta <strong><em><code>c:\hugo</code></em></strong> e <strong><em><code>c:\hugo\sites</code></em></strong>.</p>
+
+<p>Com a nossa estrutura criada vamos aos download esta e a url para pegar a ultima versão do Hugo <a href="https://github.com/spf13/hugo/releases">https://github.com/spf13/hugo/releases</a> procure pelo arquivo  &ldquo;Windows-64bit.zip&rdquo; <strong><em>Impossível na era que estamos alguém rodar windows 32Bit</em></strong> ao concluir o download extraia o arquivo para a pasta que criamos <code>c:\hugo</code> e a partir de agora precisamos definir o set path para o comando ficar conhecido globalmente no windows.</p>
+
+<blockquote>
+<p>set PATH=%PATH%;c:\hugo</p>
+</blockquote>
+
+<p>Se funcionou beleza, caso contrario vai ter que editar as variáveis de ambiente a adicionar na mão, e não estou afim de explicar como se faz isso. Se você de um desenvolvedor já deve ter formatado muito computador e instalação de windows, bem o google esta ai!!!!</p>
+
+<h2 id="criando-um-blog">Criando um blog</h2>
+
+<p>Antes de mais nada, abre o shell/dos e execute o seguinte comando na pasta <code>c:\hugo</code> a pasta pode ser qualquer uma, mas como você esta aprendendo o melhor e seguir o que estou escrevendo. <code>hugo new site meublog.dev</code>.  Putz a estrutura esta criada vamos entrar na pasta que o hugo criou <code>meublog.dev</code>, nosso primeiro blog feito em hugo esta criado, para visualizar ele sem muita dificuldade rode o comando <code>hugo serve</code> dentro da pasta do blog. O próprio hugo vai gerar uma url do tipo <strong><em><a href="http://localhost:1313/">http://localhost:1313/</a></em></strong></p>
+
+<blockquote>
+<p>&ndash; Não vai aparecer nada, pois ainda não temos um layout, tenha paciência!</p>
+</blockquote>
+
+<h2 id="criando-o-tema-e-o-layout">Criando o tema e o layout</h2>
+
+<p>Dentro do diretório que acabamos de criar vamos rodar o comando <code>hugo new theme meutema</code> abra agora um editor de sua preferencia a vamos editar sempre dentro da pasta <strong><em>c:\hugo\sites\meublog.dev\themes\meutema</em></strong> antes de iniciar a edição do tema vamos rodar o comando para setar o tema em especifico <strong><em><code>hugo -t meutema</code></em></strong></p>
+
+<h3 id="themes-meutema-layouts">themes/meutema/layouts/</h3>
+
+<p>&ndash; Aqui basicamente temos dois arquivos um <code>404.html</code> e outro <code>index.html</code> dentro desta pasta você pode ter mais arquivos do tipo <code>rss.xml</code>.</p>
+
+<h4 id="index-html">index.html</h4>
+
+<pre><code>{{ partial &quot;header.html&quot; . }}
+
+&lt;div class=&quot;columns&quot;&gt;
+  {{ partial &quot;sidebar.html&quot; . }}
+  &lt;section class=&quot;hero is-fullheight is-default is-bold&quot;&gt;
+    &lt;div class=&quot;hero-body&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        {{ range first 10 .Data.Pages }}
+          {{ if eq .Type  &quot;post&quot; }}
+            {{ .Render &quot;summary&quot;}}
+          {{ end }}
+        {{ end }}            
+        &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/div&gt;
+
+{{ partial &quot;footer.html&quot; . }}
+</code></pre>
+
+<blockquote>
+<p>&ndash; intendendo as definições aqui escritas <code>{{ range first 10 .Data.Pages }}</code> aqui a definição é clara quero que o Hugo me traga os últimos 10 Posts.
+&ndash;  <code>{{ if eq .Type  &quot;post&quot; }}</code> como o Hugo e inteligente ele vai me apresentar todas os últimos posts não importa em qual &ldquo;categoria/pasta&rdquo; ele esteja por isso vamos filtrar apenas os que estão na pasta <strong>post</strong> logo mais vou explicar como iniciar um novo post.</p>
+</blockquote>
+
+<h3 id="themes-meutema-layouts-post">themes/meutema/layouts/post/</h3>
+
+<p>&ndash; essa pasta você terá que criar pois ela também não existe, ela contem a pagina do customização do sumario do post e o próprio post.</p>
+
+<h4 id="summary-html">summary.html</h4>
+
+<pre><code class="language-HTML">
+&lt;div class=&quot;column is-full-desktop content&quot;&gt;
+  &lt;div class=&quot;heading&quot;&gt;
+    &lt;span class=&quot;is-small&quot;&gt; {{ .Date.Format &quot;Mon, Jan 2, 2006&quot; }} &lt;/span&gt;
+    &lt;h1 class=&quot;is-medium&quot;&gt;&lt;a href=&quot;{{ .Permalink }}&quot;&gt; {{ .Title }} &lt;/a&gt;&lt;/h1&gt;
+    &lt;p&gt; {{ .Summary }} &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h4 id="single-html">single.html</h4>
+
+<pre><code>{{ partial &quot;header.html&quot; . }}
+
+&lt;div class=&quot;columns&quot;&gt;
+  {{ partial &quot;sidebar.html&quot; . }}
+  &lt;section class=&quot;hero is-fullheight is-default is-bold&quot;&gt;
+    &lt;div class=&quot;hero-body&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;column is-full-desktop content&quot;&gt;
+          &lt;div class=&quot;heading&quot;&gt;
+            &lt;time class=&quot;is-small&quot;&gt; {{ .Date.Format &quot;Mon, Jan 2, 2006&quot; }} &lt;/time&gt;
+            &lt;h1 class=&quot;is-medium&quot;&gt;&lt;a href=&quot;{{ .Permalink }}&quot;&gt; {{ .Title }} &lt;/a&gt;&lt;/h1&gt;
+            &lt;p&gt; {{ .Content }} &lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;       
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/div&gt;
+
+{{ partial &quot;footer.html&quot; . }}
+</code></pre>
+
+<h3 id="themes-meutema-layouts-partials">themes/meutema/layouts/partials/</h3>
+
+<p>&ndash; vamos trabalhar na pasta partials para separar um pouco nosso layout</p>
+
+<h4 id="header-html">header.html</h4>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;title&gt; {{ .Title }} &amp;middot; {{ .Site.Title }} &lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;//cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+</code></pre>
+
+<h4 id="footer-html">footer.html</h4>
+
+<pre><code>&lt;footer class=&quot;footer&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;content has-text-centered&quot;&gt;
+      &lt;p&gt;Meu Copyright&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;
+</code></pre>
+
+<h4 id="sidebar-html">sidebar.html</h4>
+
+<p>&ndash; Esse arquivo não existe você terá que criar ele</p>
+
+<pre><code>&lt;div class=&quot;column is-half-desktop&quot;&gt;
+  &lt;section class=&quot;hero is-primary is-fullheight is-default is-bold&quot;&gt;
+    &lt;div class=&quot;hero-body&quot;&gt;
+      &lt;div class=&quot;container has-text-centered&quot;&gt;
+        &lt;div class=&quot;title is-1&quot;&gt; {{ .Site.Title }} &lt;/div&gt;
+        &lt;div class=&quot;title is-5&quot;&gt; Descrição &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h2 id="quase-tudo-pronto">Quase tudo pronto</h2>
+
+<p>&ndash; Bem o site esta quase pronto ao rodar <strong><em>hugo serve</em></strong> já da para ter uma ideia de como o site vai estar,  agora vem a porte de como criar um novo post, um processo um tanto fácil extremamente. Execute o comando <strong><em>hugo new post/meu-post-bonito.md</em></strong> pronto temos nosso primeiro post, porem precisamos escrever ele Hugo trabalha com texto do tipo Markdown, se alguém não estiver familiarizado eu utilizo este editor online <a href="https://stackedit.io/editor">https://stackedit.io/editor</a> simples e objetivo, segue abaixo um exemplo de um post.</p>
+
+<pre><code class="language-HTML">+++
+date  = &quot;2017-05-05T10:54:26-03:00&quot;
+title = &quot;Meu Post tem um titulo bem bonito&quot;
+slug  = &quot;posso-configurar-o-slug-facil&quot;
++++
+Aqui vai seu texto
+</code></pre>
+
+<blockquote>
+<p>&ndash; Duvidas posta nos comentários!!! FLW Pessoal.</p>
+</blockquote>
+
+                </div>
+            </section>
+
+            <div id="disqus_thread"></div>
+
+<script type="text/javascript">
+  var disqusUsername = "leandroross";
+  (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = '//' + disqusUsername + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+            <ul class="pagination">
+                
+                <li class="page-item page-prev">
+                    <a href="https://www.leandro.ross.nom.br/post/diferencas-entre-linguagens-de-programacao-para-web/">
+                        <p class="page-item-subtitle">Previous</p>
+                        <h3 class="page-item-title">Diferencas entre linguagens de programacao para web</h3>
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+
+
+</section>
+
+<footer class="bg-gray">
+    <section id="copyright" class="grid-footer container grid-1280">
+        <p><a href="https://github.com/drolean">GitHub Repo</a> | Version <span class="version"></span></p>
+        <p>Designed and built with ♥ by <a href="https://github.com/drolean">Leandro Ross</a></p>
+    </section>
+</footer>

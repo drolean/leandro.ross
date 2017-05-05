@@ -3,10 +3,184 @@
   <channel>
     <title>Posts on Leandro.Ross - Personal Sitio </title>
     <link>https://www.leandro.ross.nom.br/post/</link>
-    <updated>Thu, 04 May 2017 13:56:41 BRT</updated>
+    <updated>Fri, 05 May 2017 09:28:01 BRT</updated>
     <language>en-us</language>
     
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    
+    <item>
+      <title>GoHugo - Um site para desenvolvedores sem medo</title>
+      <link>https://www.leandro.ross.nom.br/post/gohugo-um-site-para-desenvolvedores-sem-medo/</link>
+      <pubDate>Fri, 05 May 2017 09:28:01 BRT</pubDate>
+      
+      <guid>https://www.leandro.ross.nom.br/post/gohugo-um-site-para-desenvolvedores-sem-medo/</guid>
+      <description>
+
+&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
+
+&lt;p&gt;Aprenda como iniciar com Hugo, vou explicar de forma clara como se gerar um site/blog do zero e fazer o deploy em um servidor rodando nginx e github. Este tutorial fará exatamente isso.&lt;/p&gt;
+
+&lt;h2 id=&#34;instalando-hugo&#34;&gt;Instalando Hugo&lt;/h2&gt;
+
+&lt;p&gt;Vamos começar do zero, como se estivesse acontecido o bigbang a poucos segundos e você precisasse de fogo para se aquecer e se proteger dos perigos que o rondam, como sou usuário do windows em desktop,&lt;/p&gt;
+
+&lt;h3 id=&#34;windows&#34;&gt;Windows&lt;/h3&gt;
+
+&lt;p&gt;Primeiro passo seria a criação da estrutura de pastas, conforme a própria documentação do Hugo sugere a instalação vou seguir aqui também, mão na massa vamos criar as seguintes pastas &lt;code&gt;c:\hugo&lt;/code&gt;  dentro da pasta vamos criar a subpasta &lt;code&gt;sites&lt;/code&gt; temos agora duas pasta &lt;strong&gt;&lt;em&gt;&lt;code&gt;c:\hugo&lt;/code&gt;&lt;/em&gt;&lt;/strong&gt; e &lt;strong&gt;&lt;em&gt;&lt;code&gt;c:\hugo\sites&lt;/code&gt;&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Com a nossa estrutura criada vamos aos download esta e a url para pegar a ultima versão do Hugo &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;https://github.com/spf13/hugo/releases&lt;/a&gt; procure pelo arquivo  &amp;ldquo;Windows-64bit.zip&amp;rdquo; &lt;strong&gt;&lt;em&gt;Impossível na era que estamos alguém rodar windows 32Bit&lt;/em&gt;&lt;/strong&gt; ao concluir o download extraia o arquivo para a pasta que criamos &lt;code&gt;c:\hugo&lt;/code&gt; e a partir de agora precisamos definir o set path para o comando ficar conhecido globalmente no windows.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;set PATH=%PATH%;c:\hugo&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Se funcionou beleza, caso contrario vai ter que editar as variáveis de ambiente a adicionar na mão, e não estou afim de explicar como se faz isso. Se você de um desenvolvedor já deve ter formatado muito computador e instalação de windows, bem o google esta ai!!!!&lt;/p&gt;
+
+&lt;h2 id=&#34;criando-um-blog&#34;&gt;Criando um blog&lt;/h2&gt;
+
+&lt;p&gt;Antes de mais nada, abre o shell/dos e execute o seguinte comando na pasta &lt;code&gt;c:\hugo&lt;/code&gt; a pasta pode ser qualquer uma, mas como você esta aprendendo o melhor e seguir o que estou escrevendo. &lt;code&gt;hugo new site meublog.dev&lt;/code&gt;.  Putz a estrutura esta criada vamos entrar na pasta que o hugo criou &lt;code&gt;meublog.dev&lt;/code&gt;, nosso primeiro blog feito em hugo esta criado, para visualizar ele sem muita dificuldade rode o comando &lt;code&gt;hugo serve&lt;/code&gt; dentro da pasta do blog. O próprio hugo vai gerar uma url do tipo &lt;strong&gt;&lt;em&gt;&lt;a href=&#34;http://localhost:1313/&#34;&gt;http://localhost:1313/&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ndash; Não vai aparecer nada, pois ainda não temos um layout, tenha paciência!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;criando-o-tema-e-o-layout&#34;&gt;Criando o tema e o layout&lt;/h2&gt;
+
+&lt;p&gt;Dentro do diretório que acabamos de criar vamos rodar o comando &lt;code&gt;hugo new theme meutema&lt;/code&gt; abra agora um editor de sua preferencia a vamos editar sempre dentro da pasta &lt;strong&gt;&lt;em&gt;c:\hugo\sites\meublog.dev\themes\meutema&lt;/em&gt;&lt;/strong&gt; antes de iniciar a edição do tema vamos rodar o comando para setar o tema em especifico &lt;strong&gt;&lt;em&gt;&lt;code&gt;hugo -t meutema&lt;/code&gt;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;themes-meutema-layouts&#34;&gt;themes/meutema/layouts/&lt;/h3&gt;
+
+&lt;p&gt;&amp;ndash; Aqui basicamente temos dois arquivos um &lt;code&gt;404.html&lt;/code&gt; e outro &lt;code&gt;index.html&lt;/code&gt; dentro desta pasta você pode ter mais arquivos do tipo &lt;code&gt;rss.xml&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h4 id=&#34;index-html&#34;&gt;index.html&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;{{ partial &amp;quot;header.html&amp;quot; . }}
+
+&amp;lt;div class=&amp;quot;columns&amp;quot;&amp;gt;
+  {{ partial &amp;quot;sidebar.html&amp;quot; . }}
+  &amp;lt;section class=&amp;quot;hero is-fullheight is-default is-bold&amp;quot;&amp;gt;
+    &amp;lt;div class=&amp;quot;hero-body&amp;quot;&amp;gt;
+      &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;
+        {{ range first 10 .Data.Pages }}
+          {{ if eq .Type  &amp;quot;post&amp;quot; }}
+            {{ .Render &amp;quot;summary&amp;quot;}}
+          {{ end }}
+        {{ end }}            
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/section&amp;gt;
+&amp;lt;/div&amp;gt;
+
+{{ partial &amp;quot;footer.html&amp;quot; . }}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ndash; intendendo as definições aqui escritas &lt;code&gt;{{ range first 10 .Data.Pages }}&lt;/code&gt; aqui a definição é clara quero que o Hugo me traga os últimos 10 Posts.
+&amp;ndash;  &lt;code&gt;{{ if eq .Type  &amp;quot;post&amp;quot; }}&lt;/code&gt; como o Hugo e inteligente ele vai me apresentar todas os últimos posts não importa em qual &amp;ldquo;categoria/pasta&amp;rdquo; ele esteja por isso vamos filtrar apenas os que estão na pasta &lt;strong&gt;post&lt;/strong&gt; logo mais vou explicar como iniciar um novo post.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;themes-meutema-layouts-post&#34;&gt;themes/meutema/layouts/post/&lt;/h3&gt;
+
+&lt;p&gt;&amp;ndash; essa pasta você terá que criar pois ela também não existe, ela contem a pagina do customização do sumario do post e o próprio post.&lt;/p&gt;
+
+&lt;h4 id=&#34;summary-html&#34;&gt;summary.html&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-HTML&#34;&gt;
+&amp;lt;div class=&amp;quot;column is-full-desktop content&amp;quot;&amp;gt;
+  &amp;lt;div class=&amp;quot;heading&amp;quot;&amp;gt;
+    &amp;lt;span class=&amp;quot;is-small&amp;quot;&amp;gt; {{ .Date.Format &amp;quot;Mon, Jan 2, 2006&amp;quot; }} &amp;lt;/span&amp;gt;
+    &amp;lt;h1 class=&amp;quot;is-medium&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;{{ .Permalink }}&amp;quot;&amp;gt; {{ .Title }} &amp;lt;/a&amp;gt;&amp;lt;/h1&amp;gt;
+    &amp;lt;p&amp;gt; {{ .Summary }} &amp;lt;/p&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;single-html&#34;&gt;single.html&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;{{ partial &amp;quot;header.html&amp;quot; . }}
+
+&amp;lt;div class=&amp;quot;columns&amp;quot;&amp;gt;
+  {{ partial &amp;quot;sidebar.html&amp;quot; . }}
+  &amp;lt;section class=&amp;quot;hero is-fullheight is-default is-bold&amp;quot;&amp;gt;
+    &amp;lt;div class=&amp;quot;hero-body&amp;quot;&amp;gt;
+      &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;
+        &amp;lt;div class=&amp;quot;column is-full-desktop content&amp;quot;&amp;gt;
+          &amp;lt;div class=&amp;quot;heading&amp;quot;&amp;gt;
+            &amp;lt;time class=&amp;quot;is-small&amp;quot;&amp;gt; {{ .Date.Format &amp;quot;Mon, Jan 2, 2006&amp;quot; }} &amp;lt;/time&amp;gt;
+            &amp;lt;h1 class=&amp;quot;is-medium&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;{{ .Permalink }}&amp;quot;&amp;gt; {{ .Title }} &amp;lt;/a&amp;gt;&amp;lt;/h1&amp;gt;
+            &amp;lt;p&amp;gt; {{ .Content }} &amp;lt;/p&amp;gt;
+          &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;       
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/section&amp;gt;
+&amp;lt;/div&amp;gt;
+
+{{ partial &amp;quot;footer.html&amp;quot; . }}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;themes-meutema-layouts-partials&#34;&gt;themes/meutema/layouts/partials/&lt;/h3&gt;
+
+&lt;p&gt;&amp;ndash; vamos trabalhar na pasta partials para separar um pouco nosso layout&lt;/p&gt;
+
+&lt;h4 id=&#34;header-html&#34;&gt;header.html&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+  &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
+  &amp;lt;meta http-equiv=&amp;quot;X-UA-Compatible&amp;quot; content=&amp;quot;IE=edge&amp;quot;&amp;gt;
+  &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1&amp;quot;&amp;gt;
+  &amp;lt;title&amp;gt; {{ .Title }} &amp;amp;middot; {{ .Site.Title }} &amp;lt;/title&amp;gt;
+  &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;//cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css&amp;quot; /&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;footer-html&#34;&gt;footer.html&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;footer class=&amp;quot;footer&amp;quot;&amp;gt;
+  &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;
+    &amp;lt;div class=&amp;quot;content has-text-centered&amp;quot;&amp;gt;
+      &amp;lt;p&amp;gt;Meu Copyright&amp;lt;/p&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/footer&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;sidebar-html&#34;&gt;sidebar.html&lt;/h4&gt;
+
+&lt;p&gt;&amp;ndash; Esse arquivo não existe você terá que criar ele&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;column is-half-desktop&amp;quot;&amp;gt;
+  &amp;lt;section class=&amp;quot;hero is-primary is-fullheight is-default is-bold&amp;quot;&amp;gt;
+    &amp;lt;div class=&amp;quot;hero-body&amp;quot;&amp;gt;
+      &amp;lt;div class=&amp;quot;container has-text-centered&amp;quot;&amp;gt;
+        &amp;lt;div class=&amp;quot;title is-1&amp;quot;&amp;gt; {{ .Site.Title }} &amp;lt;/div&amp;gt;
+        &amp;lt;div class=&amp;quot;title is-5&amp;quot;&amp;gt; Descrição &amp;lt;/div&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/section&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;quase-tudo-pronto&#34;&gt;Quase tudo pronto&lt;/h2&gt;
+
+&lt;p&gt;&amp;ndash; Bem o site esta quase pronto ao rodar &lt;strong&gt;&lt;em&gt;hugo serve&lt;/em&gt;&lt;/strong&gt; já da para ter uma ideia de como o site vai estar,  agora vem a porte de como criar um novo post, um processo um tanto fácil extremamente. Execute o comando &lt;strong&gt;&lt;em&gt;hugo new post/meu-post-bonito.md&lt;/em&gt;&lt;/strong&gt; pronto temos nosso primeiro post, porem precisamos escrever ele Hugo trabalha com texto do tipo Markdown, se alguém não estiver familiarizado eu utilizo este editor online &lt;a href=&#34;https://stackedit.io/editor&#34;&gt;https://stackedit.io/editor&lt;/a&gt; simples e objetivo, segue abaixo um exemplo de um post.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-HTML&#34;&gt;+++
+date  = &amp;quot;2017-05-05T10:54:26-03:00&amp;quot;
+title = &amp;quot;Meu Post tem um titulo bem bonito&amp;quot;
+slug  = &amp;quot;posso-configurar-o-slug-facil&amp;quot;
++++
+Aqui vai seu texto
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ndash; Duvidas posta nos comentários!!! FLW Pessoal.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
     
     <item>
       <title>Diferencas entre linguagens de programacao para web</title>
