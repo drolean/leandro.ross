@@ -3,10 +3,46 @@
   <channel>
     <title>Leandro.Ross - Personal Sitio on Leandro.Ross - Personal Sitio </title>
     <link>https://www.leandro.ross.nom.br/</link>
-    <updated>Fri, 05 May 2017 09:28:01 -03</updated>
+    <updated>Sun, 05 Nov 2017 10:03:21 -0300</updated>
     <language>en-us</language>
     
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    
+    <item>
+      <title>Javascript: O facil se torna complicado!</title>
+      <link>https://www.leandro.ross.nom.br/post/javascript-o-facil-se-torna-complicado/</link>
+      <pubDate>Sun, 05 Nov 2017 10:03:21 -0300</pubDate>
+      
+      <guid>https://www.leandro.ross.nom.br/post/javascript-o-facil-se-torna-complicado/</guid>
+      <description>&lt;p&gt;O que aconteceu com a internet de hoje, milhares de plugins, métodos, artigos, documentos, imagens, videos. uma caralhada de coisa.&lt;/p&gt;
+
+&lt;p&gt;Segue abaixo um relato meu, no qual estou enfrentando a alguns dias.&lt;/p&gt;
+
+&lt;p&gt;Hoje para se desenvolver um site, sistema ou qualquer coisa web e quase certeza que você usara JAVASCRIPT em algum momento, seja fazendo um validador ou implementação do Google Analytics ou similar e imprescindível o uso do &amp;ldquo;JS&amp;rdquo;. Ao se deparar com o uso de JAVASCRIPT na minha cabeça vem logo a palavra &amp;ldquo;JQUERY&amp;rdquo; e qualquer coisa que você pesquise na web vai aparecer muitos JQUERY&amp;rsquo;s da vida para você ler ou ver. &amp;ldquo;JQUERY e VIDA&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src=&#34;https://image.prntscr.com/image/CdipsnIqT-KHElOQLdBg9w.png&#34; alt=&#34;google search: javascript alert beautiful&#34; /&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Eis um exemplo do quanto o JQUERY ainda e massivamente predominante na web, não julgo isso a ser uma coisa ruim, porem para min e péssimo hoje em dia não posso lidar com jquery que me repreendo, &lt;strong&gt;&lt;em&gt;tenho vergonha&lt;/em&gt;&lt;/strong&gt; pois estou em um patamar no qual não posso mais lidar com JQUERY.
+&lt;center&gt;
+&lt;strong&gt;&lt;em&gt;&amp;ldquo;Sou um desenvolvedor Web a mais de uma década preciso de coisas novas&amp;rdquo;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.matrixres.com/media/2237/old-school-developer.jpg?width=359px&amp;amp;height=283px&#34; alt=&#34;Velho programador pensando no futuro&#34; /&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Porem o mundo de hoje está mais fácil, &lt;strong&gt;&amp;ldquo;mais simples&amp;rdquo;&lt;/strong&gt;, tudo mais OU tudo mais DIFICULTOSO.&lt;/p&gt;
+
+&lt;p&gt;Se alguém me falar se não quiser usar JQUERY existem outros frameworks no qual são iguais ou melhores que o bem dito jquery.. eu respondo SIM eu sei disso passei a utilizar recentemente VUE no backend na plataforma que desenvolvo e particularmente estou adorando ele, e se você procurar na web afora encontrara 30000 de frameworks que vão te atender de uma forma ou de outra.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src=&#34;https://ashleynolan.co.uk/assets/img/blog/tooling-survey/2016/q13.jpg&#34; alt=&#34;Grafico comparando a utilização de tecnologia javascript&#34; /&gt;&lt;/center&gt;
+- A Imagem acima consegue descrever o que estou tentando falar &amp;ldquo;digitar&amp;rdquo; aqui.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;*Acho que desabafei um tanto ai em cima, mas ainda tenho coisa aqui para falar! porem o momento não e agora.*
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Hoje em dia estou tentando escrever aplicativos multi dispositivo, rápidos, sem muita frescura e me deparo sempre com o uso de javascript no qual me remete a utilizar jquery ou alguma outra lib que faz trilhões de coisas das quais não preciso e dificilmente irei utilizar, não vejo muito sentido usar jquery ou outro framework para me facilitar, pois nesse caso preciso de algo para front, algo que indexadores conseguiram ler e interpretar corretamente minha pagina, e mesmo assim o usuário consiga utilizar com facilidade e rapidez.&lt;/p&gt;
+
+&lt;p&gt;escrevo mais depois&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>GoHugo - Um site para desenvolvedores sem medo</title>
