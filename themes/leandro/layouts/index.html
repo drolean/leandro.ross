@@ -6,11 +6,6 @@
         {{ partial "sidebar.html" . }}
 
         <div class="column">
-            <section class="container">
-                <header class="text-center">
-                    <a href="{{ .Site.BaseURL }}/post/">Archive</a>
-                </header>
-            </section>
 
             <section class="container">
                 {{ range first 10 .Data.Pages }}

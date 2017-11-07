@@ -8,18 +8,110 @@
     <meta name="author" content="https://github.com/drolean" />
     <title> Reiniciando no submundo do Blog &middot; Leandro.Ross - Personal Sitio </title>
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.2.14/spectre.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.2.14/spectre-icons.css" />
-    <link rel="stylesheet" href="https://www.leandro.ross.nom.br/css/main.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/combine/npm/spectre.css@0.4.5/dist/spectre.min.css,npm/highlight.js@9.12.0/styles/default.css">
+    <style>
+	 
+	 
+	.version::after {
+	  content: "0.0.14";
+	}
+	.notes blockquote p {
+		margin: auto !important;
+	}
+	.notes p {
+		font-size: 21px;
+		line-height: 1.58;
+		letter-spacing: -.003em;
+		margin: 22px 0!important;
+	}
+	ul li, ol li {
+		margin-top: 2rem;
+	}
+	.section-header {
+		padding: 1rem .5rem;
+		top: 0;
+		width: 100%;
+		z-index: 200;
+	}
+
+	.bg-gray {
+		background: #f8f9fa;
+		color: #667189;
+		padding: 1rem;
+	}    
+
+	.grid-header .navbar-brand {
+		color: #50596c;
+	}
+
+	.grid-header .btn-link {
+		color: #667189;
+		padding-left: .6rem;
+		padding-right: .6rem;
+	}
+	.grid-header .btn-link:focus, .grid-header .btn-link:hover, .grid-header .btn-link:active {
+		color: #50596c;
+		opacity: .75;
+	}
+
+	.notes {
+		margin: 4rem 0;
+	}
+
+	 
+	@media screen and (max-width: 600px) {
+		.docs-sidebar {
+			background: #fff;
+			height: 100%;
+			left: 0;
+			overflow-y: auto;
+			padding: 6rem 3rem;
+			position: fixed;
+			top: 0;
+			-webkit-transform: translateX(-100%);
+			-ms-transform: translateX(-100%);
+			transform: translateX(-100%);
+			transition: transform .2s ease, -webkit-transform .2s ease;
+			transition: transform .2s ease;
+			transition: -webkit-transform .2s ease;
+			width: 24rem;
+			z-index: 400;
+		}
+		.docs-sidebar:target {
+			-webkit-transform: translateX(0);
+			-ms-transform: translateX(0);
+			transform: translateX(0);
+			transition: transform .2s ease, -webkit-transform .2s ease;
+			transition: transform .2s ease;
+			transition: -webkit-transform .2s ease;
+		}
+		.docs-sidebar:target + .docs-nav-clear {
+			display: block;
+		}
+		.docs-nav-clear {
+			background: rgba(0, 0, 0, .15);
+			display: none;
+			height: 100%;
+			left: 0;
+			position: fixed;
+			right: 0;
+			top: 0;
+			width: 100%;
+			z-index: 300;
+		}
+		.time {
+			width: 100%;
+		}
+	}	
+	</style>
     
     <link href="" rel="alternate" type="application/rss+xml" title="Leandro.Ross - Personal Sitio" />
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>    
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>    
 </head>
 <body>
 
-<section class="section section-header bg-gray">
+<section class="section section-header bg-gray mb-2">
     <section class="grid-header container grid-1280">
         <nav class="navbar">
             <section class="navbar-section">
@@ -42,7 +134,7 @@
             <div class="panel">
                 <div class="panel-header text-center">
                     <figure class="avatar avatar-xl">
-                        <img src="https://pt.gravatar.com/userimage/10441565/d6ac82c9c2acb95567a0ce53ac866163.jpeg">
+                        <img src="https://pt.gravatar.com/userimage/10441565/d6ac82c9c2acb95567a0ce53ac866163.jpeg" alt="avatar">
                     </figure>
                     <div class="panel-title mt-10">Leandro Ross</div>
                     <div class="panel-subtitle">"Churupim"</div>
